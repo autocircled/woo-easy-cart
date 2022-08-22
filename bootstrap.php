@@ -9,6 +9,8 @@
 
 namespace WooEasyCart;
 
+use \WooEasyCart\Views\Cart;
+
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -27,6 +29,7 @@ class Bootstrap {
 	public function __construct() {
 		// will be used for initialize all others
 		// @see a-faq-builder
+		Cart::instance();
 	}
 
 	/**
